@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="custom.vmreplhealth.state" desiredValue="0" undefinedState="Warning" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+    <Lookups>
+        <SingleInt state="Error" value="0">Critical</SingleInt>
+        <SingleInt state="Ok" value="1">Healthy</SingleInt>
+        <SingleInt state="Warning" value="2">Warning</SingleInt>
+	    <SingleInt state="Ok" value="100">Replicating</SingleInt>
+	    <SingleInt state="Warning" value="200">Suspended</SingleInt>
+	    <SingleInt state="Warning" value="300">Resynchronizing</SingleInt>
+	    <SingleInt state="Warning" value="400">Resynchronize Suspended</SingleInt>
+	    <SingleInt state="Ok" value="500">Synced Replication Complete</SingleInt>
+	    <SingleInt state="Error" value="600">Errors performing replication</SingleInt>
+    </Lookups>
+</ValueLookup>
