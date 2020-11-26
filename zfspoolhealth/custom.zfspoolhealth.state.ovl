@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="custom.zfspoolhealth.state" desiredValue="0" undefinedState="Warning" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+    <!--https://docs.oracle.com/cd/E19253-01/819-5461/gamno/index.html-->
+    <Lookups>
+        <SingleInt state="Error" value="0">Faulted</SingleInt>
+        <SingleInt state="Ok" value="1">Online</SingleInt>
+        <SingleInt state="Error" value="2">Degraded</SingleInt>
+        <SingleInt state="Error" value="3">Unavail</SingleInt>
+	    <SingleInt state="Warning" value="4">Offline</SingleInt>
+	    <SingleInt state="Error" value="5">Removed</SingleInt>
+    </Lookups>
+</ValueLookup>
