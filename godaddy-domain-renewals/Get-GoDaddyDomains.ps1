@@ -39,8 +39,8 @@ try{
             value = [math]::Round((New-TimeSpan -Start (Get-Date) -end $(get-date $d.expires)).totalseconds)
             Unit = "TimeSeconds"
             LimitMode = 1
-            LimitMaxWarning = 2592000
-            LimitMaxError = 604800
+            LimitMinWarning = 2592000
+            LimitMinError = 604800
             LimitWarningMsg = "Domain is renewing within a month"
             LimitErrorMsg = "Domain needs to be renewed in the next 7 days"
         }
